@@ -1,0 +1,80 @@
+*{
+    scale: 95%;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(86, 211, 180, 0.521); /* Un azul claro para el fondo*/
+}
+
+img {
+    
+    display: right;
+    transition: transform 0.3s ease;
+}
+img:hover {
+    transform: scale(1.05);
+    border-color: #8b4513;
+}
+
+
+
+/* Contenedor principal para centrar y dar forma */
+.main-container {
+    background-color: #81D4FA; /* Azul más oscuro para el contenedor */
+    border-radius: 2.5rem; /* Bordes muy redondeados como en la imagen */
+    border: 3px, solid, black;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+/* Estilo personalizado para el botón de Iniciar Sesión */
+.btn-login {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.75rem 2rem;
+    transition: background-color 0.3s ease;
+}    
+.btn-login:hover {
+    background-color: #4CAF50;
+}
+/* Estilo para los campos de texto */
+.input-field {
+    background-color: #4FC3F7; /* Azul claro para los campos */
+    border: 2px, solid, black;
+    border-radius: 1.5rem; /* Bordes muy redondeados */
+    padding: 0.75rem 1.5rem;
+    color: white;
+    width: 100%;
+}
+.input-field::placeholder {
+    color: #b3e5fc;
+}
+/* Estilo para el botón de registro */
+.btn-register {
+    border: none;
+    color: #0c4261; /* Color del texto del enlace */
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 0.25rem;
+}
+.tn-register:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 80%;          /* Más ancho para pantallas pequeñas */
+        padding: 1.5rem;
+    }
+
+    .btn-login {
+        width: 75%;         /* Botón ocupa todo el ancho */
+        padding: 1rem;
+    }
+
+    .input-field {
+        font-size: 1.2rem;     /* Texto más grande y legible */
+    }
+}
+
